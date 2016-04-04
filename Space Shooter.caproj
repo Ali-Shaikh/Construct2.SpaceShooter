@@ -91,6 +91,14 @@
             <plugin id="TiledBg" />
             <texture original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\star-background.png" />
         </object-type>
+        <object-type name="TiledBackground2" sid="2979509589929017">
+            <plugin id="TiledBg" />
+            <texture original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\mountain-background.png" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="129873625768716">
+            <plugin id="TiledBg" />
+            <texture original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\mountain-background.png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
