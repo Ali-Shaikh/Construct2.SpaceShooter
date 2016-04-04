@@ -84,5 +84,16 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="1094947777302919">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9377899254101097" type="PlayerProjectile">
+                    <param id="0" name="Object">SmallMeteor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4570084017420717" type="PlayerProjectile" />
+                <action id="-9" name="Destroy" sid="9618119806384124" type="SmallMeteor" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
