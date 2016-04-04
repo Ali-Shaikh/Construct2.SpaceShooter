@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Space Shooter</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author>Ali Shaikh</author>
+    <author-email></author-email>
+    <author-website>www.AliShaikh.co.uk</author-website>
+    <app-id>uk.co.AliShaikh.SpaceShooter</app-id>
+    <unique-id>2a5k3kmavt9kc</unique-id>
+    <saved-with-version>22100</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Sprite" sid="8406304465557306">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7046867139186593" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LargeMeteor" sid="376435233735606">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="339878016851139" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507937" original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\Large-Meteor.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15873" />
+                            <point x="0.5" y="0.015873" />
+                            <point x="0.859375" y="0.142857" />
+                            <point x="1" y="0.492063" />
+                            <point x="0.84375" y="0.84127" />
+                            <point x="0.5" y="1" />
+                            <point x="0.140625" y="0.857143" />
+                            <point x="0" y="0.492063" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SmallMeteor" sid="9396094404653767">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9390206606096546" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129" original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\Small-Meteor.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.16129" />
+                            <point x="0.5" y="0" />
+                            <point x="0.875" y="0.129032" />
+                            <point x="1" y="0.483871" />
+                            <point x="0.84375" y="0.83871" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15625" y="0.83871" />
+                            <point x="0" y="0.483871" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="2785478041119779">
+            <plugin id="TiledBg" />
+            <texture original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\star-background.png" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances />
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
