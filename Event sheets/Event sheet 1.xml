@@ -2,5 +2,30 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="922497208011478">
+            <conditions>
+                <condition id="2" name="Key is down" sid="7985749787623051" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="5587793177517695" type="Player">
+                    <param id="0" name="Y">Player.Y-2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7461100896438037">
+            <conditions>
+                <condition id="2" name="Key is down" sid="2822290111589857" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="8259435561734757" type="Player">
+                    <param id="0" name="Y">Player.Y+2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

@@ -10,6 +10,7 @@
     <unique-id>2a5k3kmavt9kc</unique-id>
     <saved-with-version>22100</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
@@ -41,14 +42,6 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Sprite" sid="8406304465557306">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7046867139186593" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="LargeMeteor" sid="376435233735606">
             <plugin id="Sprite" />
             <animation-folder>
@@ -87,19 +80,15 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground" sid="2785478041119779">
+        <object-type name="StarBackground" sid="2785478041119779">
             <plugin id="TiledBg" />
             <texture original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\star-background.png" />
         </object-type>
-        <object-type name="TiledBackground2" sid="2979509589929017">
+        <object-type name="Mountain" sid="129873625768716">
             <plugin id="TiledBg" />
             <texture original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\mountain-background.png" />
         </object-type>
-        <object-type name="TiledBackground3" sid="129873625768716">
-            <plugin id="TiledBg" />
-            <texture original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\mountain-background.png" />
-        </object-type>
-        <object-type name="Sprite2" sid="8935965802855989">
+        <object-type name="Player" sid="8935965802855989">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3489697427287247" speed="5">
@@ -110,6 +99,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Keyboard" sid="9942813473874635">
+            <plugin id="Keyboard" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -118,7 +110,9 @@
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="5" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
