@@ -172,5 +172,69 @@
                 <action id="-9" name="Destroy" sid="9319398772939204" type="OrangeExplosion" />
             </actions>
         </event-block>
+        <event-block sid="4855740870414617">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6187429100896926" type="LargeMeteor">
+                    <param id="0" name="Object">SmallMeteor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5398087179356482" type="LargeMeteor" />
+                <action id="-9" name="Destroy" sid="1341498475142179" type="SmallMeteor" />
+                <action id="-3" name="Create object" sid="1972488786275576" type="System">
+                    <param id="0" name="Object to create">OrangeExplosion</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">LargeMeteor.X</param>
+                    <param id="3" name="Y">LargeMeteor.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5029566493188915">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="499565348684098" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="5384379284112801" type="Gun">
+                    <param id="0" name="Pin to">UFO</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action behavior="Turret" id="1" name="Add object to target" sid="1708722439168438" type="Gun">
+                    <param id="0" name="Target">Player</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7349327709080305">
+            <conditions>
+                <condition behavior="Turret" id="1" name="On shoot" sid="6902470865005326" type="Gun" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="1719335137069231" type="Gun">
+                    <param id="0" name="Object">EnemyProjectile</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1205799444254741">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7898433000560968" type="Player">
+                    <param id="0" name="Object">UFO</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1653273876777835" type="UFO" />
+                <action id="-9" name="Destroy" sid="6806521430569651" type="Gun" />
+                <action id="-9" name="Destroy" sid="3618006136569467" type="Player" />
+                <action id="0" name="Spawn another object" sid="8670411341486194" type="Player">
+                    <param id="0" name="Object">OrangeExplosion</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="5280132302862451" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="4291786071570526" type="System" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

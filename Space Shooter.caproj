@@ -17,6 +17,9 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -158,6 +161,78 @@
         </object-type>
         <object-type name="Audio" sid="4363545535305744">
             <plugin id="Audio" />
+        </object-type>
+        <object-type name="UFO" sid="3065139281895698">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="8380362915907128">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7732126733753457" speed="5">
+                    <frame duration="1" hotspotX="0.503597" hotspotY="0.510204">
+                        <image-point name="GunMount" x="0.503597" y="0.897959" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.503597" hotspotY="0.510204">
+                        <image-point name="GunMount" x="0.503597" y="0.897959" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.503597" hotspotY="0.510204">
+                        <image-point name="GunMount" x="0.503597" y="0.897959" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.503597" hotspotY="0.510204">
+                        <image-point name="GunMount" x="0.503597" y="0.897959" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gun" sid="3300734984330774">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="7255678206270236">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Turret" sid="4679572553361031">
+                    <behavior id="Turret" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1552736835451781" speed="5">
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.5" original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\Alien-Gun.png">
+                        <image-point name="SpawnPoint" x="1" y="0.5" />
+                        <collision-poly>
+                            <point x="0.176471" y="0.166667" />
+                            <point x="0.470588" y="0" />
+                            <point x="0.823529" y="0.166667" />
+                            <point x="0.941176" y="0.5" />
+                            <point x="0.764706" y="0.777778" />
+                            <point x="0.470588" y="0.888889" />
+                            <point x="0.235294" y="0.777778" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EnemyProjectile" sid="2362293140232564">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="1516790095157492">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2396750167279933" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.555556" original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\Green-Laser.png">
+                        <collision-poly>
+                            <point x="0.88" y="0.333333" />
+                            <point x="0.88" y="0.444444" />
+                            <point x="0.84" y="0.555556" />
+                            <point x="0.6" y="0.444444" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
