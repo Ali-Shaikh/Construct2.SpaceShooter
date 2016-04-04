@@ -95,5 +95,29 @@
                 <action id="-9" name="Destroy" sid="9618119806384124" type="SmallMeteor" />
             </actions>
         </event-block>
+        <event-block sid="6017943036214963">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8808000351960441" type="Player">
+                    <param id="0" name="Object">LargeMeteor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6941836201108374" type="Player" />
+                <action id="-9" name="Destroy" sid="5371232790074852" type="LargeMeteor" />
+                <action id="-26" name="Restart layout" sid="2547598690000013" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="95332827574621">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6745789055588989" type="Player">
+                    <param id="0" name="Object">SmallMeteor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9647634741529674" type="Player" />
+                <action id="-9" name="Destroy" sid="9348680674605694" type="SmallMeteor" />
+                <action id="-26" name="Restart layout" sid="839315623081519" type="System" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
