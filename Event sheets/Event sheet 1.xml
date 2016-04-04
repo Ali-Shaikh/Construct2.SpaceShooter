@@ -40,5 +40,20 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="9848592015120861">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="9867540963900753" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="4457254203302571" type="System">
+                    <param id="0" name="Object to create">PlayerProjectile</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">player.ImagePointX(1)</param>
+                    <param id="3" name="Y">player.ImagePointY(1)</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

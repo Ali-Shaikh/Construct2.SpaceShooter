@@ -14,7 +14,9 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -92,7 +94,9 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3489697427287247" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804">
+                        <image-point name="Shoot Point" x="1" y="0.470588" />
+                    </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.509804" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.509804" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.509804" />
@@ -101,6 +105,26 @@
         </object-type>
         <object-type name="Keyboard" sid="9942813473874635">
             <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="PlayerProjectile" sid="842884696105792">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="6041777943566288">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9150476931622448" speed="5">
+                    <frame duration="1" hotspotX="0.52" hotspotY="0.555556" original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\Orange Laser.png">
+                        <collision-poly>
+                            <point x="0.88" y="0.333333" />
+                            <point x="0.88" y="0.444444" />
+                            <point x="0.84" y="0.555556" />
+                            <point x="0.6" y="0.444444" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
