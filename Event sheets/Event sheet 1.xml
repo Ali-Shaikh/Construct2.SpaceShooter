@@ -27,5 +27,15 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="12159033408821">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9642199501608469" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Scroll to X" sid="4812658876948824" type="System">
+                    <param id="0" name="X">scrollx+60*dt</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
