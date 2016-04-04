@@ -53,6 +53,12 @@
                     <param id="2" name="X">player.ImagePointX(1)</param>
                     <param id="3" name="Y">player.ImagePointY(1)</param>
                 </action>
+                <action id="0" name="Play" sid="815370083637994" type="Audio">
+                    <param id="0" name="Audio file">One Shot Laser FX</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="2858821133161506">
@@ -64,6 +70,12 @@
             <actions>
                 <action id="-9" name="Destroy" sid="3422031645625489" type="PlayerProjectile" />
                 <action id="-9" name="Destroy" sid="1252066311460892" type="LargeMeteor" />
+                <action id="-3" name="Create object" sid="5766947963852081" type="System">
+                    <param id="0" name="Object to create">OrangeExplosion</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">LargeMeteor.X</param>
+                    <param id="3" name="Y">LargeMeteor.Y</param>
+                </action>
                 <action id="-3" name="Create object" sid="5409119958617073" type="System">
                     <param id="0" name="Object to create">SmallMeteor</param>
                     <param id="1" name="Layer">2</param>
@@ -93,6 +105,12 @@
             <actions>
                 <action id="-9" name="Destroy" sid="4570084017420717" type="PlayerProjectile" />
                 <action id="-9" name="Destroy" sid="9618119806384124" type="SmallMeteor" />
+                <action id="-3" name="Create object" sid="209737003036022" type="System">
+                    <param id="0" name="Object to create">OrangeExplosion</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">SmallMeteor.X</param>
+                    <param id="3" name="Y">SmallMeteor.Y</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="6017943036214963">
@@ -104,6 +122,12 @@
             <actions>
                 <action id="-9" name="Destroy" sid="6941836201108374" type="Player" />
                 <action id="-9" name="Destroy" sid="5371232790074852" type="LargeMeteor" />
+                <action id="-3" name="Create object" sid="8040311579558416" type="System">
+                    <param id="0" name="Object to create">OrangeExplosion</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">LargeMeteor.X</param>
+                    <param id="3" name="Y">LargeMeteor.Y</param>
+                </action>
                 <action id="-16" name="Wait" sid="4256407931416333" type="System">
                     <param id="0" name="Seconds">2</param>
                 </action>
@@ -119,10 +143,33 @@
             <actions>
                 <action id="-9" name="Destroy" sid="9647634741529674" type="Player" />
                 <action id="-9" name="Destroy" sid="9348680674605694" type="SmallMeteor" />
+                <action id="-3" name="Create object" sid="2943118764124131" type="System">
+                    <param id="0" name="Object to create">OrangeExplosion</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">SmallMeteor.X</param>
+                    <param id="3" name="Y">SmallMeteor.Y</param>
+                </action>
                 <action id="-16" name="Wait" sid="6981373836277089" type="System">
                     <param id="0" name="Seconds">2</param>
                 </action>
                 <action id="-26" name="Restart layout" sid="839315623081519" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="5625045508986622">
+            <conditions>
+                <condition id="-18" name="On created" sid="8766490199916089" type="OrangeExplosion" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2195761774142627" type="Audio">
+                    <param id="0" name="Audio file">Explode FX</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="591946872396703" type="System">
+                    <param id="0" name="Seconds">0.4</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9319398772939204" type="OrangeExplosion" />
             </actions>
         </event-block>
     </events>

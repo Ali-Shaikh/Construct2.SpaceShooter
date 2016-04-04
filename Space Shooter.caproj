@@ -10,6 +10,7 @@
     <unique-id>2a5k3kmavt9kc</unique-id>
     <saved-with-version>22100</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -142,6 +143,22 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="OrangeExplosion" sid="2824779945769398">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4448251790484503" speed="8">
+                    <frame duration="1" hotspotX="0.507937" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="4363545535305744">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -152,8 +169,25 @@
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="5" />
+        <global-instance type="Audio" uid="12">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="One Shot Laser FX.ogg" />
+        <file name="Explode FX.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">
