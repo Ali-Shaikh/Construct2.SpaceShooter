@@ -95,11 +95,17 @@
             <animation-folder>
                 <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3489697427287247" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.509804">
-                        <image-point name="Shoot Point" x="1" y="0.470588" />
+                        <image-point name="Shoot Point" x="1" y="0.490196" />
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804">
+                        <image-point name="Shoot Point" x="1" y="0.490196" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804">
+                        <image-point name="Shoot Point" x="1" y="0.490196" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804">
+                        <image-point name="Shoot Point" x="1" y="0.490196" />
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
