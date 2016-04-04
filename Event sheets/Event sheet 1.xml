@@ -236,5 +236,42 @@
                 <action id="-26" name="Restart layout" sid="4291786071570526" type="System" />
             </actions>
         </event-block>
+        <event-block sid="510945631207574">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2354801969127719" type="EnemyProjectile">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="2464410081398451" type="EnemyProjectile" />
+                <action id="-9" name="Destroy" sid="7851477769662104" type="Player" />
+                <action id="0" name="Spawn another object" sid="4439072502025125" type="Player">
+                    <param id="0" name="Object">OrangeExplosion</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="1225218354621413" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="3752880796112271" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="4950669438048021">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2701779056442227" type="PlayerProjectile">
+                    <param id="0" name="Object">UFO</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="60779196791146" type="EnemyProjectile" />
+                <action id="-9" name="Destroy" sid="5601030496347038" type="UFO" />
+                <action id="-9" name="Destroy" sid="9578983306023512" type="Gun" />
+                <action id="0" name="Spawn another object" sid="4821365497302475" type="UFO">
+                    <param id="0" name="Object">OrangeExplosion</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
