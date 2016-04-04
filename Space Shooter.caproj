@@ -99,6 +99,17 @@
             <plugin id="TiledBg" />
             <texture original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\mountain-background.png" />
         </object-type>
+        <object-type name="Sprite2" sid="8935965802855989">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3489697427287247" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
