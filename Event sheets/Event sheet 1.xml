@@ -104,6 +104,9 @@
             <actions>
                 <action id="-9" name="Destroy" sid="6941836201108374" type="Player" />
                 <action id="-9" name="Destroy" sid="5371232790074852" type="LargeMeteor" />
+                <action id="-16" name="Wait" sid="4256407931416333" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
                 <action id="-26" name="Restart layout" sid="2547598690000013" type="System" />
             </actions>
         </event-block>
@@ -116,6 +119,9 @@
             <actions>
                 <action id="-9" name="Destroy" sid="9647634741529674" type="Player" />
                 <action id="-9" name="Destroy" sid="9348680674605694" type="SmallMeteor" />
+                <action id="-16" name="Wait" sid="6981373836277089" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
                 <action id="-26" name="Restart layout" sid="839315623081519" type="System" />
             </actions>
         </event-block>
