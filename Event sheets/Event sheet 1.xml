@@ -55,5 +55,34 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="2858821133161506">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="687851814842272" type="PlayerProjectile">
+                    <param id="0" name="Object">LargeMeteor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3422031645625489" type="PlayerProjectile" />
+                <action id="-9" name="Destroy" sid="1252066311460892" type="LargeMeteor" />
+                <action id="-3" name="Create object" sid="5409119958617073" type="System">
+                    <param id="0" name="Object to create">SmallMeteor</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">LargeMeteor.X</param>
+                    <param id="3" name="Y">LargeMeteor.Y</param>
+                </action>
+                <action id="-8" name="Set angle" sid="3732235536293872" type="SmallMeteor">
+                    <param id="0" name="Angle">140</param>
+                </action>
+                <action id="-3" name="Create object" sid="4166615903874563" type="System">
+                    <param id="0" name="Object to create">SmallMeteor</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">LargeMeteor.X</param>
+                    <param id="3" name="Y">LargeMeteor.Y</param>
+                </action>
+                <action id="-8" name="Set angle" sid="40871654143861" type="SmallMeteor">
+                    <param id="0" name="Angle">200</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

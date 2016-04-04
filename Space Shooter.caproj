@@ -46,6 +46,11 @@
     <object-folder>
         <object-type name="LargeMeteor" sid="376435233735606">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="5176296838426074">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="339878016851139" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.507937" original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\Large-Meteor.png">
@@ -65,6 +70,11 @@
         </object-type>
         <object-type name="SmallMeteor" sid="9396094404653767">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="3140951945363696">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9390206606096546" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.516129" original-source="G:\Construct 2\Developing HTML5 Games with Construct 2\Reference Files\Graphics\Small-Meteor.png">
